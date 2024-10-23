@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <title>EasyEat - Street Food Restaurant</title>
+            <link rel="icon" type="image/png" href="logo1.jpg">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        </head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div id="navbars">  
+        <div class="photo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="navbar">
+            <a class="active" href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">Pages</a>
+            <a href="javascript:void(0)">Blog</a>
+            <a href="javascript:void(0)">Shop</a>
+            <a href="javascript:void(0)">Contacts</a>
+        </div>
+        <div class="ican">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <div class="cart-icon" id="cartIcon" title="Go to Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    <div class="cart-icon-1" id="cartIcon" title="Go to Cart">
+        <i class="fa-solid fa-image"></i>
+    </div>
+    <div class="cart-icon-2" id="cartIcon" title="Go to Cart">
+        <i class="fa-solid fa-file"></i>
+    </div>
+<div class="home-page">
+    <div class="first-color">
+            <div class="text-box">
+                    <h3>ABOUT US</h3>
+                    <text>
+                        UNFORGETABBLE BURGERS, </br>
+                        UNFORGETABBLE MEMORIES
+                    </text>
+                    <div class="icons">
+                        <div class="icons-1">
+                            <i class="fas fa-drumstick-bite"></i>
+                      <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="icons-1">
+                            <i class="fas fa-bacon"></i>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="icons-1">
+                            <i class="fas fa-utensils"></i>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <button class="about-button">
+                        ABOUT US <i class="fa-solid fa-arrow-right"></i> 
+                    </button>
+            </div>
+    </div>
+    <div class="second-color">
+
+            <div class="image">
+                <img src="burger.png">
+            </div>
+    </div>
+</div>
+</div>
+<div class="second-page">
+    <div class="page-text">
+    <p class="our-burgers">OUR BURGERS</p>
+    <p class="cravings"> UNLEASH YOUR BURGER CRAVINGS </br>WITH OUR MENU</p>
+    </div>
+    <div class="menu">
+        <div class="menu-1">
+            <div class="image-container">
+                <img src="burger1.png" alt="Chicken Burger">
+                <div class="icons-burger">
+                    <div class="box">
+                        <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+                    <div class="box">
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                </div> 
+            </div>
+            <div class="detail-1">
+                <p class="burger">CHICKEN BURGER</p>
+                <p class="price">$165.00</p>
+            </div>
+        </div>
+        <div class="menu-2">
+                <div class="image-container">
+                    <div class="label">-10%</div>
+                    <img src="burger2.png">
+                    <div class="icons-burger">
+                        <div class="box">
+                            <i class="fa-regular fa-heart arrow"></i>
+                            </div>
+                        <div class="box">
+                            <i class="fa-solid fa-arrow-right arrow"></i>
+                        </div>    
+                    </div>
+                </div>
+            <div class="detail-2">     
+                    <p class="burger">BLACK BURGER</p>
+                    <p class="price">
+                        <span class="crossed-out">$99.00</span> 
+                        <span>$89.00</span>
+                    </p>
+            </div>
+        </div>
+        <div class="menu-3">
+            <div class="image-container">
+            <img src="burger3.png">
+            <div class="icons-burger">
+                <div class="box">
+                    <i class="fa-regular fa-heart arrow"></i>
+                    </div>
+                <div class="box">
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+            </div>
+            </div>
+            <div class="detail-3">
+                    <p class="burger">FISH BURGER</p>
+                    <p class="price">$49.00</p>
+            </div>
+        </div>
+        <div class="menu-4">
+            <div class="image-container">
+            <img src="burger4.png">
+            <div class="icons-burger">
+                <div class="box">
+                    <i class="fa-regular fa-heart arrow"></i>
+                    </div>
+                <div class="box">
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+            </div>
+            </div>
+            <div class="detail-4">
+                    <p class="burger">DOUBLE BURGER</p>
+                    <p class="price">$125.00 - $165.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="View-More">
+                <button>
+                    View More <i class="fa-solid fa-arrow-right"></i> 
+                </button>
+    </div>
+</div>
+</div>
+<script>
+const menuItems = document.querySelectorAll('.menu > div');
+menuItems.forEach(item =>
+{
+    const priceElement = item.querySelector('.price');
+    const originalPrice = priceElement.textContent;
+    item.addEventListener('mouseenter', () => 
+    {
+        priceElement.textContent = 'Buy Now';
+        priceElement.style.textDecoration = 'underline'; 
+        priceElement.style.fontSize = "16px";
+    });
+    item.addEventListener('mouseleave', () => 
+    {
+        priceElement.textContent = originalPrice;
+        priceElement.style.textDecoration = 'none'; 
+    });
+});
+</script>
+<div class="page-3">
+    <div class="image-box">
+        <div class="chef">
+            <img src="chef.jpg">
+        </div>
+        <div class="text-chef">
+            <div class="text1">
+                <p class="food-text">GOURMET BAKERS</p>
+                <p class="second-text">DELICIOUS BURGERS MADE FROM </br>THE FRESHEST INGREDIENTS </p>
+                <p class="short">Nibh venenatis cras sed felis eget velit aliquet sagittis. Faucibus purus in</br> massa tempor nec feugiat nisl pretium fusce.</p>
+            </div>
+            <div class="food">
+                <img src="food.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="logos">
+            <div class="logo-1">
+                <img src="logo-1.png">
+            </div>
+            <div class="logo-2">
+                <img src="logo-2.png" class="colored-logo">
+            </div>
+            <div class="logo-3">
+                <img src="logo-3.png" class="colored-logo">
+            </div>
+            <div class="logo-4">
+                <img src="logo-5.png" class="colored-logo">
+            </div>
+            <div class="logo-5">
+                <img src="logo-6.png" class="colored-logo">
+            </div>
+            <div class="logo-6">
+                <img src="logo-7.png" class="colored-logo">
+            </div>
+    </div>
+</div>
+<div class="page-4">
+    <div class="images">
+        <div class="tooltip toolhere">
+            <img src="burgerss.jpg" alt="Burger">
+            <span class="tooltiptext">CHEF'S CHICKEN BURGER</span>
+        </div>
+    </div>
+    <div class="images-2">
+        <div class="food-1 tooltip toolhere">
+            <img src="good.jpg" alt="Food Item 1">
+            <span class="tooltiptext">DOUBLE BURGER SET</span>
+        </div>
+        <div class="food-1 tooltip toolhere">
+            <img src="drink.jpg" alt="Drink Item">
+            <span class="tooltiptext">CRAFT LIGHT BEER</span>
+        </div>
+    </div>
+    <div class="images-3">
+        <div class="food-2 tooltip toolhere">
+            <img src="ketchup.jpg" alt="Ketchup">
+            <span class="tooltiptext">TOMATO SPICY SAUCE</span>
+        </div>
+        <div class="food-2 tooltip toolhere">
+            <img src="fries.jpg" alt="Fries">
+            <span class="tooltiptext">HOT FRENCH FRIES</span>
+        </div>
+    </div>
+</div>
+<div class="page-5">
+    <div class="m-page">
+        <div class="menuu-text">
+            <div class="menuu-text1">
+                <p class="our-menu">OUR MENU</p>
+            </div>
+            <div class="menuu-text2">
+                <p class="one-stop">YOUR ONE-STOP BURGER</p>
+            </div>
+        </div>
+    </div>
+    <div class="menuu">
+        <div class="menuu-1">
+            <p class="classic">CLASSIC JUICY CHEESE BURGER <span class=dots>. . . . . . .  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span>$12.00</p>
+            <p class="detail">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <p class="classic">MUSHROOM SWISS BURGER <span class=dots>. . . . . . .  . . . . . . . . .  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span>$10.00</p>
+            <p class="detail">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <p class="classic">BUFALLO CHICKEN BURGER <span class=dots> . . . . . . . .  . . .  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span>$14.00</p>
+            <p class="detail">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <p class="classic">SOUTHWEST CHICKEN BURGER <span class=dots>. . . . . . . .  . . .  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </span>$10.00</p>
+            <p class="detail">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p> 
+            <p class="classic">PHILLY CHEESESTEAK BURGER<span class=dots>. . . . . . . .  . . .  . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . . .  . </span>$10.00</p>
+            <p class="detail">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+        </div>
+        <div class="menuu-2">
+            <p class="classic">LOADED GUACAMOLE BURGER <span class=dots>. .  . . . . . . .  . . .  . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . . .  </span>$16.00</p>
+            <p class="detail">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <p class="classic">TERIYAKI PINEAPPLE BURGER <span class=dots>. .  . . . . . . .  . . .  . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . . .  </span>$12.00</p>
+            <p class="detail">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <p class="classic">DOUBLE BACON CHEESEBURGER <span class=dots>. .  . . . . . . .  . . .  . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . .  </span>$16.00</p>
+            <p class="detail">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <p class="classic">DOUBLE CHEESEBURGER MELT <span class=dots>. .  . . . . . . .  . . .  . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . . .  </span>$14.00</p>
+            <p class="detail">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <p class="classic">BLACKENED CHICKEN BURGER <span class=dots>. .  . . . . . . .  . . . . . . . . . . . . .  . . . . . . . . . . . . . . . . . . . . . . .  </span>  $12.00</p>
+            <p class="detail">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+        </div>
+    </div>
+</div>
+<div class="page-6">
+    <div class="new-page">
+        <div class="meal">
+            <div class="crown-and-text">
+            <img src="crown.svg" class="mealimg">
+            <img src="meal.png" >
+        </div>
+        </div>
+        <div class="meal-text">
+            <div class="meal-text1">
+                <img src="circle.svg">
+              
+                <p class="dinner">OUR DINER</p>
+                <p class="best">WE MAKE THE BEST </br>
+                BURGERS IN TOWN</p>
+                <text class="details">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.natus error sit voluptatem accusantium doloremque laudantium.</text>
+                </br></br></br>
+                <text class="details-1">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.</text>
+            </br> </br> </br></br>
+                <button class="details-button">LEARN MORE
+                    <i class="fa-solid fa-arrow-right"></i> 
+                </button>
+                <div class="circle"></div>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-7">
+    <div class="blog">
+        <div class="articles">
+            <text class="new-text">BLOG & ARTICLES</text>
+        </br></br>
+            <text class="new-text1">LATEST NEWS</text>
+        </div>
+        <div class="new-images">
+            <div class="new-image1">
+                <img src="newburger.jpg" alt="Delicious Burger" />
+                <div class="new-image-text">
+                        <p class="snacks">SNACKS</p>
+                        <p class="a">WHAT IS THE DIFFERENCE BETWEEN </br>HAMBURGERS & BURGERS</p>
+                        <p class="b">April 21, 2020 . 0 Comments</p>
+                </div>
+            </div>
+            <div class="new-image2">
+                <img src="newburger2.jpg" alt="Delicious Burger" />
+                <div class="new-image-text">
+                    <p class="snacks">SNACKS</p>
+                    <p class="a">10 THE MOST UNUSUAL WAYS TO SERVE</br>BURGERS IN RESTAURANTS</p>
+                    <p class="b">April 21, 2020 . 0 Comments</p>
+                </div>
+            </div>
+            <div class="new-image3">
+                <img src="newburger3.jpg" alt="Delicious Burger" />
+                <div class="new-image-text">
+                    <p class="snacks">SNACKS</p>
+                    <p class="a">HOW TO MAKE THE PERFECT FRENCH FRIES</br>WITH SAUCE AT HOME?</p>
+                    <p class="b">April 21, 2020 . 0 Comments</p>
+                </div>
+            </div>  
+        </div>
+        <ul class="bullet-container">
+            <li class="item-one"><i class="fa-regular fa-circle bullet"></i></li>
+            <li class="item-two"><i class="fa-regular fa-circle bullet"></i></li>
+            <li class="item-three"><i class="fa-regular fa-circle bullet"></i></li>
+            <li class="item-four"><i class="fa-regular fa-circle bullet"></i></li>
+        </ul>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="bottom-1">
+        <div class="bottom-text">
+            <div class="crown-and-text">
+            <img src="crown.svg" class="crown-img">
+            <p class="text-bottom">
+                SUBSCRIBE FOR EXCLUSIVE </br> UPDATES AND HOT OFFERS!
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-2">
+        <div class="bottom-text">
+            <input type="email" name="EMAIL" placeholder="Enter Your Email Address" >
+    <div class="policy">
+            <label>
+                <input type="checkbox" class="policy-checkbox">
+                I agree to the <u>Privacy Policy.</u>
+            </label>
+    </div>
+        </div>
+        <div class="subscribe">
+            <button class="subscribe-button">
+                <i class="fa-solid fa-paper-plane"></i> SUBSCRIBE
+            </button>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-1">
+            <div class="footer-box">
+                <div class="footer-text">
+                <p class="cook">WE COOK ONLY THE MOST </br>DELICIOUS MEALS</p>
+                </div>
+            </div>
+            <div class="footer-box-1">
+                <div class="address-1">
+                    <p class="address-text">ADDRESS</p>
+                    <p class="address-text2">Germany - </br> 785 Street, Office 478 </br> Berlin, De 81566</p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hello">
+                    <p class="address-text">SAY HELLO</p>
+                    <p class="address-text2">
+                        <span class="underline">info@email.com</span><br></br>
+                        +1 840 841 25 69
+                    </p>
+                </div>
+            </div>
+    </div>
+    <div class="line">                  
+    </div>
+    <div class="foot-container">
+    <div class="foot">
+        <div class="item">OUR BLOG</div>
+        <div class="item">ABOUT US</div>
+        <div class="item">CONTACTS</div>
+        </div>
+    <div class="theme">
+        <div class="item-1">AncorThemes 2024. All Rights Reserved.</div>
+    </div>
+</footer>
+<script>
+
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function () {
+        scrollFunction()
+    };
+    function scrollFunction()
+    {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else 
+        {
+            mybutton.style.display = "none";
+        }
+    }
+    function topFunction() 
+    {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+</script>
+</body>
+</html>
